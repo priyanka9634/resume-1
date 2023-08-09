@@ -443,72 +443,6 @@ $loop$: $about-section-mobile.resume.project as $obj
 
 -- end: ftd.column
 
--- ftd.column:
-if: { !ftd.is_empty(about-section-mobile.resume.certificate)}
-width: fill-container
-
--- data-card: CERTIFICATES
-
--- certificate-section:
-name: $obj.name
-issuer: $obj.issuer
-date: $obj.date
-url: $obj.url
-$loop$: $about-section-mobile.resume.certificate as $obj
-
--- end: ftd.column
-
--- ftd.column:
-if: { !ftd.is_empty(about-section-mobile.resume.award)}
-width: fill-container
-
--- data-card: AWARDS
-
--- acheivement-section:
-title: $obj.title
-date: $obj.date
-awarder:  $obj.awarder
-summary: $obj.summary
-$loop$: $about-section-mobile.resume.award as $obj
-
--- end: ftd.column
-
--- ftd.column:
-if: { !ftd.is_empty(about-section-mobile.resume.volunteer)}
-width: fill-container
-
--- data-card: VOLUNTEERS
-
-
--- volunteer-section:
-organization: $obj.organization
-position: $obj.position
-url: $obj.url
-startDate: $obj.startDate
-endDate: $obj.endDate
-highlights: $obj.highlights
-summary: $obj.summary
-$loop$: $about-section-mobile.resume.volunteer as $obj
-
--- end: ftd.column
-
--- ftd.column:
-if: { !ftd.is_empty(about-section-mobile.resume.reference)}
-width: fill-container
-
--- data-card: REFERENCES
-
--- refrences-section:
-name: $obj.name
-position: $obj.position
-company: $obj.company
-email: $obj.email-id
-phone: $obj.phone-no
-reference: $obj.reference
-$loop$: $about-section-mobile.resume.reference as $obj
-
--- end: ftd.column
-
 -- end: ftd.column
 
 -- end: about-section-mobile
@@ -568,7 +502,6 @@ optional caption title:
 optional string label:
 
 -- ftd.column:
-padding-top.px: 32
 padding-bottom.px: 24
 border-bottom-width.px: 2
 border-color: $inherited.colors.background.base
@@ -671,7 +604,7 @@ left.px: -33
 padding-vertical.px: 2
 padding-horizontal.px: 2
 border-radius.px: 100
-background.solid: $inherited.colors.custom.three
+background.solid: $inherited.colors.custom.four
 
 -- end: ftd.row
 
@@ -1175,7 +1108,7 @@ role: $inherited.types.fine-print
 if: { education-section.startDate != NULL }
 white-space: nowrap
 
--- ftd.text: \\~
+-- ftd.text: \~
 if: { education-section.endDate != NULL }
 
 -- ftd.text: $education-section.endDate
