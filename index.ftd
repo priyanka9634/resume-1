@@ -1367,6 +1367,8 @@ background.solid: $inherited.colors.background.base
 if: { project-section.image != NULL }
 src: $project-section.image
 width.fixed.percent: 30
+height: fill-container
+border-radius.px: 6
 
 -- ftd.column:
 width.fixed.percent: 70
