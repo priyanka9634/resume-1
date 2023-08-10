@@ -50,13 +50,9 @@ image: $assets.files.image.svg
 
 \-- john-doe.project: Node.org
 description: Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that executes JavaScript code outside a web browser.
-keyword: Node JS
 startDate: Aug 2011
 endDate: May 2018
 url: /
-role: Contributor and evangelist
-entity: Node.org
-type: Server-side Application
 image: $assets.files.image.svg
 
 -- site-doc.header: Properties:
@@ -64,52 +60,32 @@ image: $assets.files.image.svg
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
-type: caption (`required`)
+type: caption (`optional`)
 
 It's used to show `title` for the project sections.
 
 -- site-doc.component-property: `description`
-type: string (`required`)
+type: string (`optional`)
 
 It's used to show `description` for the project.
 
 -- site-doc.component-property: `url`
-type: link (`required`)
+type: link (`optional`)
 
 It's used to show `url` for the project.
 
--- site-doc.component-property: `keyword`
-type: string (`required`)
-
-It's used to show `keyword` for the project.
-
 -- site-doc.component-property: `startDate`
-type: string (`required`)
+type: string (`optional`)
 
 It's used to show `startDate` for the project.
 
 -- site-doc.component-property: `endDate`
-type: string (`required`)
+tyoptionalpe: string (`optional`)
 
 It's used to show `endDate` for the project.
 
--- site-doc.component-property: `role`
-type: string (`required`)
-
-It's used to show `role` for the project.
-
--- site-doc.component-property: `entity`
-type: string (`required`)
-
-It's used to show `entity` for the project.
-
--- site-doc.component-property: `type`
-type: string (`required`)
-
-It's used to show `type` for the project.
-
 -- site-doc.component-property: `image`
-type: ftd.image-src (`required`)
+type: ftd.image-src (`optional`)
 
 It's used to show `image` for the project.
 

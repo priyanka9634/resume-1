@@ -49,17 +49,17 @@ url: https://twitter.com/john
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
-type: caption (`required`)
+type: caption (`optional`)
 
 It's used to show `title` for the profile sections.
 
 -- site-doc.component-property: `username`
-type: string (`required`)
+type: string (`optional`)
 
 It's used to show `username` for the profile.
 
 -- site-doc.component-property: `url`
-type: link (`required`)
+type: link (`optional`)
 
 It's used to show `url` for the profile.
 

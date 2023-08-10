@@ -86,12 +86,12 @@ level: advance
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
-type: caption (`required`)
+type: caption (`optional`)
 
 It's used to show `title` for the skills sections.
 
 -- site-doc.component-property: `level`
-type: string (`required`)
+type: string (`optional`)
 
 It's used to show `level` for the skills.
 

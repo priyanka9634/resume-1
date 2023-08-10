@@ -1090,7 +1090,6 @@ optional string studyType:
 optional string startDate:
 optional string endDate:
 
-
 -- ftd.column:
 width: fill-container
 margin-bottom.px: 16

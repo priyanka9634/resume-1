@@ -51,47 +51,37 @@ image: $assets.files.profile-picture.jpg
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
-type: caption (`required`)
+type: caption (`optional`)
 
 It's used to show `title` for the basic info sections.
 
 -- site-doc.component-property: `label`
-type: string (`required`)
+type: string (`optional`)
 
 It's used to show `label` for the basic info.
 
 -- site-doc.component-property: `email`
-type: string (`required`)
+type: string (`optional`)
 
 It's used to show `email` for the basic info sections.
 
 -- site-doc.component-property: `phone`
-type: string (`required`)
+type: string (`optional`)
 
 It's used to show `phone` for the basic info sections.
 
 -- site-doc.component-property: `url`
-type: link (`required`)
+type: link (`optional`)
 
 It's used to show `url` for the basic info sections.
 
--- site-doc.component-property: `maritalStatus`
-type: string (`required`)
-
-It's used to show `maritalStatus` for the basic info sections.
-
--- site-doc.component-property: `dateOfBirth`
-type: string (`required`)
-
-It's used to show `dateOfBirth` for the basic info sections.
-
 -- site-doc.component-property: `summary`
-type: string (`required`)
+type: string (`optional`)
 
 It's used to show `summary` for the basic info sections.
 
 -- site-doc.component-property: `image`
-type: ftd.image-src (`required`)
+type: ftd.image-src (`optional`)
 
 It's used to show `image` for the basic info sections.
 
