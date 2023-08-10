@@ -47,27 +47,27 @@ region: California
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
-type: caption (`required`)
+type: caption (`optional`)
 
 It's used to show `title` for the location sections.
 
 -- site-doc.component-property: `postalCode`
-type: string (`required`)
+type: string (`optional`)
 
 It's used to show `postalCode` for the location.
 
 -- site-doc.component-property: `city`
-type: string (`required`)
+type: string (`optional`)
 
 It's used to show `city` for the location.
 
 -- site-doc.component-property: `countryCode`
-type: string (`required`)
+type: string (`optional`)
 
 It's used to show `countryCode` for the location.
 
 -- site-doc.component-property: `region`
-type: string (`required`)
+type: string (`optional`)
 
 It's used to show `region` for the location.
 
