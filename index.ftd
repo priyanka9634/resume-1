@@ -1,7 +1,7 @@
 
 -- import: fifthtry.github.io/resume/sample as s
 -- import: fifthtry.github.io/resume as res
--- import: fifthtry.github.io/caffeine-resume/assets
+-- import: priyanka9634.github.io/resume-1/assets
 
 
 
@@ -155,7 +155,6 @@ padding-bottom.px: 8
 border-bottom-width.px: 2
 border-color: $inherited.colors.background.base
 
-
 -- heading: SOCIAL:
 
 -- social-section:
@@ -182,7 +181,6 @@ $loop$: $about-section-desktop.resume.language as $obj
 -- end: ftd.column
 
 -- end: ftd.column
-
 
 -- ftd.column:
 width.fixed.percent: 75
@@ -286,12 +284,18 @@ $loop$: $about-section-desktop.resume.skill as $obj
 
 -- end: ftd.column
 
-
 -- end: ftd.column
 
 -- end: ftd.row
 
 -- end: about-section-desktop
+
+
+
+
+
+
+
 
 
 
@@ -310,11 +314,13 @@ role: $inherited.types.fine-print
 
 -- progress-bar: $language-section.fluency
 
-
 -- end: ftd.column
 
-
 -- end:language-section
+
+
+
+
 
 
 
@@ -615,7 +621,6 @@ text: $profile-card-mobile.label
 role: $inherited.types.fine-print
 color: $inherited.colors.text-strong
 
-
 -- end: ftd.column
 
 -- end: profile-card-mobile
@@ -829,6 +834,14 @@ spread.px: 1
 blur.px: 3
 
 
+
+
+
+
+
+
+
+
 -- component heading:
 caption title:
 
@@ -880,8 +893,15 @@ $loop$: $skill-section.keyword as $obj
 
 -- end: ftd.column
 
-
 -- end: skill-section
+
+
+
+
+
+
+
+
 
 
 -- component keyword-card:
@@ -987,26 +1007,6 @@ border-radius.px: 50
 
 
 
-
-
-
--- ftd.row profile-card:
-background.solid: $inherited.colors.background.step-2
-optional caption title:
-optional string label:
-width: fill-container
-
---- profile-card-desktop: $title
-label: $label
-
---- profile-card-mobile: $title
-if: $is-mobile
-label: $label
-
-
-
-
-
 -- component profile-title:
 optional caption title:
 optional string label:
@@ -1031,6 +1031,16 @@ label: $profile-title.label
 -- end: ftd.column
 
 -- end: profile-title
+
+
+
+
+
+
+
+
+
+
 
 
 -- component profile-title-desktop:
@@ -1060,10 +1070,11 @@ color: $inherited.colors.text-strong
 width: fill-container
 padding-left.px: 24
 
-
 -- end: ftd.row
 
 -- end: profile-title-desktop
+
+
 
 
 
@@ -1100,10 +1111,12 @@ width: fill-container
 padding-left.px: 24
 text-align: center
 
-
 -- end: ftd.column
 
 -- end: profile-title-mobile
+
+
+
 
 
 
