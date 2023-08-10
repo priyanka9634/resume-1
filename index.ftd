@@ -139,11 +139,6 @@ candidate-email-address: $about-section-desktop.resume.basic.email
 candidate-phone: $about-section-desktop.resume.basic.phone
 candidate-address-city: $about-section-desktop.resume.location.city
 candidate-address: $about-section-desktop.resume.location.address
-candidate-address-postalCode: $about-section-desktop.resume.location.postalCode
-candidate-address-region: $about-section-desktop.resume.location.region
-candidate-address-countryCode: $about-section-desktop.resume.location.countryCode
-maritalStatus: $about-section-desktop.resume.basic.maritalStatus
-dateOfBirth: $about-section-desktop.resume.basic.dateOfBirth
 website: $about-section-desktop.resume.basic.url 
 
 -- end: ftd.column
@@ -200,12 +195,10 @@ border-color: $inherited.colors.background.base
 -- work-section:
 name: $obj.name
 position: $obj.position
-location: $obj.location
 url: $obj.url
 startDate: $obj.startDate
 endDate: $obj.endDate
 summary: $obj.summary
-highlights: $obj.highlights
 $loop$: $about-section-desktop.resume.work as $obj
 
 -- end: ftd.column
@@ -229,13 +222,6 @@ spacing.fixed.px: 24
 name: $obj.name
 url: $obj.url
 description: $obj.description
-startDate: $obj.startDate
-endDate: $obj.endDate
-highlights: $obj.highlights
-role: $obj.role
-keyword: $obj.keyword
-entity: $obj.entity
-type: $obj.type
 image: $obj.image
 $loop$: $about-section-desktop.resume.project as $obj
 
@@ -257,12 +243,9 @@ border-color: $inherited.colors.background.base
 -- education-section:
 institution: $obj.institution
 url: $obj.url
-courses: $obj.courses
-area: $obj.area
 studyType: $obj.studyType
 startDate: $obj.startDate
 endDate: $obj.endDate
-score: $obj.score
 $loop$: $about-section-desktop.resume.education as $obj
 
 -- end: ftd.column
@@ -377,11 +360,7 @@ candidate-email-address: $about-section-mobile.resume.basic.email
 candidate-phone: $about-section-mobile.resume.basic.phone
 candidate-address-city: $about-section-mobile.resume.location.city
 candidate-address: $about-section-mobile.resume.location.address
-candidate-address-postalCode: $about-section-mobile.resume.location.postalCode
-candidate-address-region: $about-section-mobile.resume.location.region
-candidate-address-countryCode: $about-section-mobile.resume.location.countryCode
-maritalStatus: $about-section-mobile.resume.basic.maritalStatus
-dateOfBirth: $about-section-mobile.resume.basic.dateOfBirth
+website: $about-section-mobile.resume.basic.url
 
 -- end: ftd.column
 
@@ -433,12 +412,9 @@ padding-horizontal.px: 24
 -- work-section:
 name: $obj.name
 position: $obj.position
-location: $obj.location
 url: $obj.url
 startDate: $obj.startDate
 endDate: $obj.endDate
-summary: $obj.summary
-highlights: $obj.highlights
 $loop$: $about-section-mobile.resume.work as $obj
 
 -- end: ftd.column
@@ -454,18 +430,10 @@ padding-horizontal.px: 24
 name: $obj.name
 url: $obj.url
 description: $obj.description
-startDate: $obj.startDate
-endDate: $obj.endDate
-highlights: $obj.highlights
-role: $obj.role
-keyword: $obj.keyword
-entity: $obj.entity
-type: $obj.type
 image: $obj.image
 $loop$: $about-section-mobile.resume.project as $obj
 
 -- end: ftd.column
-
 
 -- ftd.column:
 if: { !ftd.is_empty(about-section-mobile.resume.education)}
@@ -477,12 +445,9 @@ padding-horizontal.px: 24
 -- education-section:
 institution: $obj.institution
 url: $obj.url
-courses: $obj.courses
-area: $obj.area
 studyType: $obj.studyType
 startDate: $obj.startDate
 endDate: $obj.endDate
-score: $obj.score
 $loop$: $about-section-mobile.resume.education as $obj
 
 -- end: ftd.column
@@ -682,13 +647,8 @@ margin-bottom.px: 16
 -- component contact-section:
 optional string candidate-email-address:
 optional string candidate-address-city: 
-optional string candidate-address-region: 
-optional string candidate-address-countryCode: 
 optional caption candidate-address: 
-optional string candidate-address-postalCode:/
-string candidate-phone:
-optional string maritalStatus: 
-optional string dateOfBirth: 
+string candidate-phone: 
 optional string website:
 
 -- ftd.column:
@@ -1126,12 +1086,10 @@ text-align: center
 -- component education-section:
 optional caption institution:
 optional string url:
-optional string area:
 optional string studyType:
 optional string startDate:
 optional string endDate:
-optional string score:
-optional string courses:
+
 
 -- ftd.column:
 width: fill-container
@@ -1195,8 +1153,6 @@ optional string url:
 optional string startDate:
 optional string endDate:
 optional string summary:
-optional string location:
-optional string highlights:
 
 -- ftd.column:
 width: fill-container
@@ -1245,6 +1201,7 @@ style: medium
 
 -- ftd.text: $work-section.name
 if: { work-section.position != NULL }
+link if { work-section.url != NULL}: $work-section.url
 color: $inherited.colors.text-strong
 width: fill-container
 style: medium
@@ -1391,15 +1348,8 @@ text: $refrences-section.reference
 -- component project-section:
 optional caption name:
 optional string description:
-optional string highlights:
-optional string keyword:
-optional string startDate:
-optional string endDate:
-optional string url:
-optional string role:
-optional string entity:
-optional string type:
 optional ftd.image-src image:
+optional string url:
 
 -- ftd.row:
 width.fixed.percent: 45
@@ -1433,6 +1383,7 @@ width: fill-container
 padding-top.px: 4
 
 -- end: ftd.column
+
 -- end: ftd.row
 
 -- end:project-section
